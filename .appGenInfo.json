@@ -1,0 +1,23 @@
+{
+  "generationParameters": {
+    "generationDate": "Wed Aug 05 2026 07:49:05 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "SAP Business Application Studio",
+    "serviceType": "SAP System (ABAP On-Premise)",
+    "metadataFilename": "",
+    "serviceUrl": "https://services.odata.org/northwind/northwind.svc/",
+    "appName": "nwproductsdatav",
+    "appTitle": "NW Products Data",
+    "appDescription": "All the products records of Northwind ",
+    "appNamespace": "",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.150.1",
+    "enableEslint": true,
+    "enableTypeScript": false,
+    "showMockDataInfo": true,
+    "generatorVersion": "1.30.0",
+    "template": "Basic V2",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}
