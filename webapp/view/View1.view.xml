@@ -1,6 +1,70 @@
-<mvc:View controllerName="nwproductsdatav.controller.View1"
+<mvc:View
+    controllerName="nwproductsdatav.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <Button
+                text="Click Me"
+                press="_greetMe"
+            />
+            <Table
+                id="idProductsTable"
+                items="{path:'prod>/'}"
+            >
+                <columns>
+                    <Column>
+                        <Text text="{i18n>pid}" />
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>pname}" />
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>sid}" />
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>cid}" />
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>quanperunit}" />
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>up}" />
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>uis}" />
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>uoo}" />
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>rl}" />
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>disc}" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem vAlign="Middle">
+                        <cells>
+                            <Text text="{prod>ProductID}" />
+                            <Text text="{prod>ProductName}" />
+                            <Text text="{prod>SupplierID}" />
+                            <Text text="{prod>CategoryID}" />
+                            <Text text="{prod>QuantityPerUnit}" />
+                            <Text text="{prod>UnitPrice}" />
+                            <Text text="{prod>UnitsInStock}" />
+                            <Text text="{prod>UnitsOnOrder}" />
+                            <Text text="{prod>ReorderLevel}" />
+                            <Text text="{prod>Discontinued}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
     </Page>
 </mvc:View>
